@@ -80,3 +80,9 @@ This component is provided **as-is** without warranties or guarantees. Use it at
 ## 🎉 Happy Coding!
 Enhance your Dynamics 365 experience with SmartButtons and make activity creation effortless!
 
+# Want to support? 🍵☕
+
+If you like this idea, you can keep momentum by [treating me to a coffee ;-)](https://buymeacoffee.com/ionavarga)
+
+
+
