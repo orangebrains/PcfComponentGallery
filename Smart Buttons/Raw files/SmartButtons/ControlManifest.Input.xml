@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+  <control 
+    namespace="IonaV" 
+    constructor="SmartButtons" 
+    version="0.0.1" 
+    display-name-key="SmartButtons" 
+    description-key="SmartButtons description" 
+    control-type="virtual">
+    
+    <external-service-usage enabled="false" />
+    <property name="PrimaryName" display-name-key="Primary Name Column on Entity" description-key="Primary Name Column on Entity" of-type="SingleLine.Text" usage="bound" required="true" />
+
+    <property 
+      name="DisplayTaskQuickButton" 
+      display-name-key="Display Task Quick Button" 
+      description-key="Display Task Quick Button" 
+      of-type="TwoOptions" 
+      usage="input" 
+      required="false" />
+    
+    <property 
+      name="TaskButtonAppearance" 
+      display-name-key="Task Button Appearance" 
+      description-key="Task Button Appearance" 
+      of-type="Enum" 
+      usage="input" 
+      required="false" 
+      default-value="0">
+      <value name="Subtle" display-name-key="Subtle" description-key="Subtle">0</value>
+      <value name="Primary" display-name-key="Primary" description-key="Primary">1</value>
+      <value name="Outline" display-name-key="Outline" description-key="Outline">2</value>
+    </property>
+    
+    <property 
+      name="TaskButtonStyle" 
+      display-name-key="Task Button Style" 
+      description-key="Task Button Style" 
+      of-type="Enum" 
+      usage="input" 
+      required="false" 
+      default-value="0">
+      <value name="Rounded" display-name-key="Rounded" description-key="Rounded">0</value>
+      <value name="Circular" display-name-key="Circular" description-key="Circular">1</value>
+      <value name="Square" display-name-key="Square" description-key="Square">2</value>
+    </property>
+
+    <property 
+      name="DisplayEmailQuickButton" 
+      display-name-key="Display Email Quick Button" 
+      description-key="Display Email Quick Button" 
+      of-type="TwoOptions" 
+      usage="input" 
+      required="false" />
+    
+    <property 
+      name="EmailButtonAppearance" 
+      display-name-key="Email Button Appearance" 
+      description-key="Email Button Appearance" 
+      of-type="Enum" 
+      usage="input" 
+      required="false" 
+      default-value="0">
+      <value name="Subtle" display-name-key="Subtle" description-key="Subtle">0</value>
+      <value name="Primary" display-name-key="Primary" description-key="Primary">1</value>
+      <value name="Outline" display-name-key="Outline" description-key="Outline">2</value>
+    </property>
+    
+    <property 
+      name="EmailButtonStyle" 
+      display-name-key="Email Button Style" 
+      description-key="Email Button Style" 
+      of-type="Enum" 
+      usage="input" 
+      required="false" 
+      default-value="0">
+      <value name="Rounded" display-name-key="Rounded" description-key="Rounded">0</value>
+      <value name="Circular" display-name-key="Circular" description-key="Circular">1</value>
+      <value name="Square" display-name-key="Square" description-key="Square">2</value>
+    </property>
+
+    <property 
+      name="DisplayAppointmentQuickButton" 
+      display-name-key="Display Appointment Quick Button" 
+      description-key="Display Appointment Quick Button" 
+      of-type="TwoOptions" 
+      usage="input" 
+      required="false" />
+    
+    <property 
+      name="AppointmentButtonAppearance" 
+      display-name-key="Appointment Button Appearance" 
+      description-key="Appointment Button Appearance" 
+      of-type="Enum" 
+      usage="input" 
+      required="false" 
+      default-value="0">
+      <value name="Subtle" display-name-key="Subtle" description-key="Subtle">0</value>
+      <value name="Primary" display-name-key="Primary" description-key="Primary">1</value>
+      <value name="Outline" display-name-key="Outline" description-key="Outline">2</value>
+    </property>
+    
+    <property 
+      name="AppointmentButtonStyle" 
+      display-name-key="Appointment Button Style" 
+      description-key="Appointment Button Style" 
+      of-type="Enum" 
+      usage="input" 
+      required="false" 
+      default-value="0">
+      <value name="Rounded" display-name-key="Rounded" description-key="Rounded">0</value>
+      <value name="Circular" display-name-key="Circular" description-key="Circular">1</value>
+      <value name="Square" display-name-key="Square" description-key="Square">2</value>
+    </property>
+
+    <property 
+      name="DisplayPhoneCallQuickButton" 
+      display-name-key="Display Phone Call Quick Button" 
+      description-key="Display Phone Call Quick Button" 
+      of-type="TwoOptions" 
+      usage="input" 
+      required="false" />
+    
+    <property 
+      name="PhoneCallButtonAppearance" 
+      display-name-key="Phone Call Button Appearance" 
+      description-key="Phone Call Button Appearance" 
+      of-type="Enum" 
+      usage="input" 
+      required="false" 
+      default-value="0">
+      <value name="Subtle" display-name-key="Subtle" description-key="Subtle">0</value>
+      <value name="Primary" display-name-key="Primary" description-key="Primary">1</value>
+      <value name="Outline" display-name-key="Outline" description-key="Outline">2</value>
+    </property>
+    
+    <property 
+      name="PhoneCallButtonStyle" 
+      display-name-key="Phone Call Button Style" 
+      description-key="Phone Call Button Style" 
+      of-type="Enum" 
+      usage="input" 
+      required="false" 
+      default-value="0">
+      <value name="Rounded" display-name-key="Rounded" description-key="Rounded">0</value>
+      <value name="Circular" display-name-key="Circular" description-key="Circular">1</value>
+      <value name="Square" display-name-key="Square" description-key="Square">2</value>
+    </property>
+
+    <property 
+      name="DisplayLetterQuickButton" 
+      display-name-key="Display Letter Quick Button" 
+      description-key="Display Letter Quick Button" 
+      of-type="TwoOptions" 
+      usage="input" 
+      required="false" />
+    
+    <property 
+      name="LetterButtonAppearance" 
+      display-name-key="Letter Button Appearance" 
+      description-key="Letter Button Appearance" 
+      of-type="Enum" 
+      usage="input" 
+      required="false" 
+      default-value="0">
+      <value name="Subtle" display-name-key="Subtle" description-key="Subtle">0</value>
+      <value name="Primary" display-name-key="Primary" description-key="Primary">1</value>
+      <value name="Outline" display-name-key="Outline" description-key="Outline">2</value>
+    </property>
+    
+    <property 
+      name="LetterButtonStyle" 
+      display-name-key="Letter Button Style" 
+      description-key="Letter Button Style" 
+      of-type="Enum" 
+      usage="input" 
+      required="false" 
+      default-value="0">
+      <value name="Rounded" display-name-key="Rounded" description-key="Rounded">0</value>
+      <value name="Circular" display-name-key="Circular" description-key="Circular">1</value>
+      <value name="Square" display-name-key="Square" description-key="Square">2</value>
+    </property>
+
+    <property 
+      name="DisplayFaxQuickButton" 
+      display-name-key="Display Fax Quick Button" 
+      description-key="Display Fax Quick Button" 
+      of-type="TwoOptions" 
+      usage="input" 
+      required="false" />
+    
+    <property 
+      name="FaxButtonAppearance" 
+      display-name-key="Fax Button Appearance" 
+      description-key="Fax Button Appearance" 
+      of-type="Enum" 
+      usage="input" 
+      required="false" 
+      default-value="0">
+      <value name="Subtle" display-name-key="Subtle" description-key="Subtle">0</value>
+      <value name="Primary" display-name-key="Primary" description-key="Primary">1</value>
+      <value name="Outline" display-name-key="Outline" description-key="Outline">2</value>
+    </property>
+    
+    <property 
+      name="FaxButtonStyle" 
+      display-name-key="Fax Button Style" 
+      description-key="Fax Button Style" 
+      of-type="Enum" 
+      usage="input" 
+      required="false" 
+      default-value="0">
+      <value name="Rounded" display-name-key="Rounded" description-key="Rounded">0</value>
+      <value name="Circular" display-name-key="Circular" description-key="Circular">1</value>
+      <value name="Square" display-name-key="Square" description-key="Square">2</value>
+    </property>
+
+    <resources>
+      <code path="index.ts" order="1" />
+      <platform-library name="React" version="16.14.0" />
+      <platform-library name="Fluent" version="9.46.2" />
+    </resources>
+    
+    <feature-usage>
+      <uses-feature name="Utility" required="true" />
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+  </control>
+</manifest>
