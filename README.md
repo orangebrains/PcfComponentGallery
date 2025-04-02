@@ -54,6 +54,12 @@ Thank you for being part of this initiative. Let's work together to create an ex
 Happy coding! 🚀
 
 
+# Want to support? 🍵☕
+
+If you like this idea, you can keep momentum by [treating me to a coffee ;-)](https://buymeacoffee.com/ionavarga)
+
+
+
 ## ⚠️ Disclaimer
 
 All components in this repository are provided as-is without any warranties or guarantees. Use them at your own risk. While we strive to maintain high-quality components, we cannot be held responsible for any issues, security risks, or unintended consequences that may arise from their usage. Please thoroughly test any component before deploying it in a production environment. Effort is put into making components as secure as possible, but being a volunteering project, there simply is no budget for ISV management like bigger firms. 
