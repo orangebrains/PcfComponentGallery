@@ -9,6 +9,12 @@ export class SmartButtons implements ComponentFramework.ReactControl<IInputs, IO
     private _context: ComponentFramework.Context<IInputs>;
     private _primaryName: string;
     private _record: ComponentFramework.LookupValue;
+    private _quickCreateEmail: boolean;
+    private _quickCreatePhoneCall: boolean;
+    private _quickCreateTask: boolean;
+    private _quickCreateAppointment: boolean;
+    private _quickCreateLetter: boolean;
+    private _quickCreateFax: boolean;
     /**
      * Empty constructor.
      */
@@ -33,8 +39,13 @@ export class SmartButtons implements ComponentFramework.ReactControl<IInputs, IO
         this._currentEntityId = _ppUri.searchParams.get("id") ?? "";
         this._currentEntityName = _ppUri.searchParams.get("etn") ?? "";
         this._context = context;
-        console.log("Fiddler")
-        console.log("Current Entity ID: " + this._currentEntityId);
+
+        this._quickCreateAppointment = context.parameters.UseQuickCreateForAppointment.raw.valueOf() ?? false;
+        this._quickCreateEmail = context.parameters.UseQuickCreateForEmail.raw.valueOf() ?? false;
+        this._quickCreatePhoneCall = context.parameters.UseQuickCreateForPhoneCall.raw.valueOf() ?? false;
+        this._quickCreateTask = context.parameters.UseQuickCreateForTask.raw.valueOf() ?? false;
+        this._quickCreateLetter = context.parameters.UseQuickCreateForLetter.raw.valueOf() ?? false;
+        this._quickCreateFax = context.parameters.UseQuickCreateForFax.raw.valueOf() ?? false;
         
     }
 
@@ -66,44 +77,44 @@ export class SmartButtons implements ComponentFramework.ReactControl<IInputs, IO
 
     public handleTask(): void {
         const parameters = {}
-        this.handleActivity("task", parameters);
+        this.handleActivity("task", parameters, this._quickCreateTask);
     }
 
     public handleEmail(): void {
 
         const parameters = {}
 
-        this.handleActivity("email", parameters);
+        this.handleActivity("email", parameters, this._quickCreateEmail);
     }
 
     public handleAppointment(): void {
         const parameters = {}
-        this.handleActivity("appointment", parameters);
+        this.handleActivity("appointment", parameters, this._quickCreateAppointment);
     }
 
     public handlePhoneCall(): void {
         const parameters = {}
-        this.handleActivity("phonecall", parameters);
+        this.handleActivity("phonecall", parameters, this._quickCreatePhoneCall);
     }
 
     public handleLetter(): void {
         const parameters = {}
-        this.handleActivity("letter", parameters);
+        this.handleActivity("letter", parameters, this._quickCreateLetter);
     }
 
     public handleFax(): void {
         const parameters = {}
-        this.handleActivity("fax", parameters);
+        this.handleActivity("fax", parameters, this._quickCreateFax);
     }
 
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    public handleActivity(entity:string, parameters: Record<string, any> | undefined): void {
-        console.log("Opening " + entity + " form for " + this._primaryName);
+    public handleActivity(entity:string, parameters: Record<string, any> | undefined, quickCreateUsage:boolean): void {
         const record = this._record;
 
         const pageInput: ComponentFramework.NavigationApi.EntityFormOptions = {
             createFromEntity: record,
             entityName: entity,
+            useQuickCreateForm: quickCreateUsage,
         };
         this._context.navigation.openForm(pageInput, parameters ).then(
             function success() {
