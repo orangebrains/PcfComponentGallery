@@ -18,6 +18,14 @@
       of-type="TwoOptions" 
       usage="input" 
       required="false" />
+
+    <property 
+      name="UseQuickCreateForTask" 
+      display-name-key="Use Quick Create for Task" 
+      description-key="Use Quick Create for Task" 
+      of-type="TwoOptions" 
+      usage="input" 
+      required="false" />
     
     <property 
       name="TaskButtonAppearance" 
@@ -49,6 +57,14 @@
       name="DisplayEmailQuickButton" 
       display-name-key="Display Email Quick Button" 
       description-key="Display Email Quick Button" 
+      of-type="TwoOptions" 
+      usage="input" 
+      required="false" />
+
+    <property 
+      name="UseQuickCreateForEmail" 
+      display-name-key="Use Quick Create for Email" 
+      description-key="Use Quick Create for Email" 
       of-type="TwoOptions" 
       usage="input" 
       required="false" />
@@ -86,6 +102,14 @@
       of-type="TwoOptions" 
       usage="input" 
       required="false" />
+
+    <property 
+      name="UseQuickCreateForAppointment" 
+      display-name-key="Use Quick Create for Appointment" 
+      description-key="Use Quick Create for Appointment" 
+      of-type="TwoOptions" 
+      usage="input" 
+      required="false" />
     
     <property 
       name="AppointmentButtonAppearance" 
@@ -117,6 +141,14 @@
       name="DisplayPhoneCallQuickButton" 
       display-name-key="Display Phone Call Quick Button" 
       description-key="Display Phone Call Quick Button" 
+      of-type="TwoOptions" 
+      usage="input" 
+      required="false" />
+
+    <property 
+      name="UseQuickCreateForPhoneCall" 
+      display-name-key="Use Quick Create for Phone Call" 
+      description-key="Use Quick Create for Phone Call" 
       of-type="TwoOptions" 
       usage="input" 
       required="false" />
@@ -154,6 +186,14 @@
       of-type="TwoOptions" 
       usage="input" 
       required="false" />
+
+    <property 
+      name="UseQuickCreateForLetter" 
+      display-name-key="Use Quick Create for Letter" 
+      description-key="Use Quick Create for Letter" 
+      of-type="TwoOptions" 
+      usage="input" 
+      required="false" />
     
     <property 
       name="LetterButtonAppearance" 
@@ -185,6 +225,14 @@
       name="DisplayFaxQuickButton" 
       display-name-key="Display Fax Quick Button" 
       description-key="Display Fax Quick Button" 
+      of-type="TwoOptions" 
+      usage="input" 
+      required="false" />
+
+    <property 
+      name="UseQuickCreateForFax" 
+      display-name-key="Use Quick Create for Fax" 
+      description-key="Use Quick Create for Fax" 
       of-type="TwoOptions" 
       usage="input" 
       required="false" />
