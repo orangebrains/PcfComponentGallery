@@ -29,6 +29,9 @@ This solution has no build-it-yourself optionality
 The component is bound to a set of address fields. Based on those, it can display on load the current location. Searching addresses and selecting them makes dirty changes on the form, so Power Platform is aware of any potential unsaved changes.
 
 ## ⚙️ Configuration
+Download [the managed solution from here](https://github.com/ionavarga/PcfComponentGallery/blob/main/Address%20Validator/Managed%20Solution/AddressValidatorSolution.zip) and install in your environment.
+After installation, set your Subscription Key before continuing.
+
 Address Validator allows customization via 1 PowerApps property:
 - **Display Map**: Choose whether you want to see a map below the address input field or not
 
